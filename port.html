@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Santiago del Monaco.dev</title>
+    <link rel="icon" type="image/png" href="icono.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="port.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@283&display=swap" rel="stylesheet">
+  </head>
+  <body class="background1" id="body">
+    
+    <header>
+      <nav class="navbar sticky-top navbar-animation" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="homelink" onclick="chosen1(this), background1(this), animation1()" >Home</a>
+          <a class="navbar-brand" href="#" id="aboutlink" onclick="chosen2(this), background2(this), animation2()">About me</a>
+          <a class="navbar-brand" href="#" id="skillslink" onclick="chosen3(this), background3(this), animation3()">Stack</a>
+          <a class="navbar-brand" href="#" onclick="chosen4(this), background3(this), animation4(this)">Proyects</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <div class="container">
+          <section class="row" id="screen-1" > 
+            <div class="col-12 col-md-5">
+              <h1 class="title-animation" id="title1">Santiago del Monaco</h1>
+              <br>
+              <p class="title-animation" id="subt-1">Web Developer</p>
+            </div>
+            <div class="col-12 col-md-7">
+              <img class="img-animation" src="Designer-gif.gif" alt="" height="auto" width="auto" id="img-1">
+            </div>
+          </section>
+
+          <section class="row hidden"  id="screen-2">
+            <div class="col-12 col-md-6" id="about-title"><h1>About Me</h1></div>
+            <div class="col-12 col-md-6" id="about-text"><p>Hey,there! I'm Santiago and i am an argentinian web developer. At the moment, im 16. Im about to graduate from highschool meanwhile i study to become a fullstack developer.<br> In my free time, you will find me playing Field Hockey or learning new tecnologies.</p></div>
+          </section>
+
+          <section class="row hidden" id="screen-3">
+            <div class="col-12 col-md-6">
+              <h1 id="tec-title">Stack</h1> <br>
+              <p id="tec-text">I master the use of: <br>
+                 HTML 5 / CSS 3/ Javascript/ Bootstrap / React / NodeJs / MySQL ... for now</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <img id="tec-img" src="Tools.bee60d97.png" alt="" height="80%" width="80%">
+            </div>
+          </section>
+
+          <section class="row hidden" id="screen-4">
+              <h1 id="pro-title" class="col-12 col-md-6">Projects</h1>
+              <div id="pro-text" class="col-12 col-md-6">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Soon...</p>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Soon...</p>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Soon...</p>
+                  </div>
+                </div>  
+
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Soon...</p>
+                  </div>
+                </div>
+              </div>
+          </section>
+        </div>  
+    </main>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="port.js"></script>
+  </body>
+</html>

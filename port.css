@@ -1,0 +1,158 @@
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+}
+
+/* -----elment style--------------------------------------------------------------------------------*/
+a{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    border: solid 1px transparent;
+    padding: 1px;
+    transition: 1s;
+}
+.navbar-brand:hover{
+    border-bottom: solid 1px;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+
+}
+main{
+    margin: 20px;
+}
+.navbar{
+    background: transparent;
+    position: sticky;
+    top: 0px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    height: auto;
+}
+
+.row{
+    position: absolute;
+    top: 0px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.card{
+    color: black;
+}
+
+/* -----elment style------------------------------------------------------------------------ */
+
+
+
+/* ------sreens---------------------------------------------------------------------  */
+#screen1{
+    padding-left: 40px;
+}
+#screen-2{
+    background-color: transparent;
+    height: 500px;
+    padding: 40px;
+}
+
+#screen-3{
+    color: white;
+    padding: 40px;
+}
+
+#screen-4{
+    color: #fff;
+    padding: 50px;
+}
+/* ------sreens---------------------------------------------------------------------  */
+
+
+/* -----JS classes------------------------------------------------------------------  */
+.background1{
+    background-color: rgb(211, 219, 244);
+}
+
+.background2{
+    background-color: rgb(211, 219, 244);
+}
+
+.background3{
+    background:  #7E57C2 ;
+}
+
+.hidden{
+    visibility: hidden;
+    }
+
+/* -----JS classes------------------------------------------------------------------  */
+
+/* ----animation------------------------------------------------------------------  */
+
+@keyframes nav-load {
+ 
+    0%{transform: translateY(-100%);}
+
+    100%{transform: translateY(0);}
+
+}
+
+
+@keyframes title-load {
+
+    0%{transform: translateX(-100%);}
+
+    100%{transform: rotateX(0);}
+
+}
+
+@keyframes img-load {
+
+    0%{transform: translateY(200%);}
+
+    100%{transform: translateY(0);}
+
+}
+
+.navbar-animation{
+    animation: nav-load 1s ;
+}
+
+.title-animation{
+    animation: title-load 1s;
+
+}
+
+.img-animation{
+    animation: img-load 1s;
+}
+
+/* ----animation------ */
+
+/* -----response---- */
+
+
+@media (max-width: 500px) {
+    .row{
+        width: 80vh;
+    }
+  }
+
+  .card{
+      margin: 10px;
+  }
